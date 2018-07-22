@@ -10,7 +10,7 @@ app = Flask(__name__)
 def hello_world():
     cmd = os.environ['BATCH_SHIPYARD_CMD']
     subprocess.check_output(cmd)
-    ＃stdout = subprocess.check_output(cmd)
+    #stdout = subprocess.check_output(cmd)
     #print(stdout)
     return 'Hello, World!'
     #return python_version()
