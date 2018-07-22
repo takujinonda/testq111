@@ -9,7 +9,8 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     cmd = os.environ['BATCH_SHIPYARD_CMD']
-    stdout = subprocess.check_output(cmd)
+    subprocess.check_output(cmd)
+    ＃stdout = subprocess.check_output(cmd)
     #print(stdout)
     return 'Hello, World!'
     #return python_version()
